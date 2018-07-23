@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/txtNombrePaciente"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtApellidoPaciente"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtNombrePaciente"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtFechaNacimientoPaciente"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtApellidoPaciente"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnDetallesPaciente"
+            android:layout_width="183dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/txtNombrePaciente"
+            android:layout_toEndOf="@+id/txtApellidoPaciente"
+            android:background="@color/colorPrimary"
+            android:text="Detalles"
+            android:textColor="@android:color/background_light" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary" />
+
+</RelativeLayout>
